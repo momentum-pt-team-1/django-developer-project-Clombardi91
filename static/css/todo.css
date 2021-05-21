@@ -1,0 +1,87 @@
+h1 a, h2 a {
+    color: #befc05;
+    font-family: 'Lobster';
+}
+
+body {
+    padding-left: 15px;
+   }
+
+.page-header {
+    background-color:rgb(49, 49, 50);
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #f0ebeb;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #c6fc05;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #2929d3;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #3131f4;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #7e7b7b;
+}
+
+body {
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    height: 100%;
+    background-size: cover; 
+    overflow: hidden;
+
+    }

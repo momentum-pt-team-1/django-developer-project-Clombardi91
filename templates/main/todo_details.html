@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <article class="post">
+        {% if todo.created_date %}
+            <time class="date">
+                {{ todo.created_date }}
+            </time>
+        {% endif %}
+        <h2>{{ todo.title }}</h2>
+        <p>{{ todo.text|linebreaksbr }}</p>
+    </article>
+{% endblock %}
