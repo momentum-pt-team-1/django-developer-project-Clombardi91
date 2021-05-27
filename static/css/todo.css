@@ -1,24 +1,24 @@
 h1 a, h2 a {
-    color: #e62e19;
+    color: #070707;
     font-family: 'Lobster';
 }
 
 body {
-    padding-left: 15px;
+    padding-left: 10px;
    }
 
 .page-header {
-    background-color:rgb(49, 49, 50);
+    background-color:rgb(190, 148, 31);
     margin-top: 0;
     margin-bottom: 40px;
-    padding: 20px 20px 20px 40px;
+    padding: 15px 15px 15px 25px;
 }
 
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
-    color: #ebe6e6;
+    color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
@@ -27,11 +27,11 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Big Shoulders Display', cursive;
 }
 
 .date {
-    color: #c6fc05;
+    color: #000000;
 }
 
 .save {
@@ -46,7 +46,7 @@ h4 {
 .top-menu,
 .top-menu:hover,
 .top-menu:visited {
-    color: #2929d3;
+    color: #fffffd;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
@@ -58,7 +58,7 @@ h4 {
 
 .post h2 a,
 .post h2 a:visited {
-    color: #3131f4;
+    color: #000000;
 }
 
 .post > .date,
@@ -68,17 +68,17 @@ h4 {
 
 .btn-default,
 .btn-default:visited {
-    color: #C25100;
+    color: #d31414;
     background: none;
-    border-color: #C25100;
+    border-color: #000000;
 }
 
 .btn-default:hover {
     color: #FFFFFF;
-    background-color: #7e7b7b;
+    background-color: #ffffff;
 }
 
-body {
+main {
     background: url('../img/background.jpg') no-repeat center center fixed;
     height: 100%;
     background-size: cover; 
