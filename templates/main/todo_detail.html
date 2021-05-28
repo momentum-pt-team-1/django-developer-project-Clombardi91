@@ -5,7 +5,7 @@
     <article class="todo">
         <aside class="actions">
             <a class="btn btn-default" href="{% url 'todo_edit' pk=todo.pk %}">
-              {% include '/icons/pencil-fill.svg' %}
+              {% include '../icons/pencil-fill.svg' %}
             </a>
         </aside>
         {% if todo.created_date %}

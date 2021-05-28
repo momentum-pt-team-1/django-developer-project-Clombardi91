@@ -10,7 +10,7 @@ from django.shortcuts import redirect
 
 
 def todo_list(request):
-    todos = Todo.objects.filter(created_date__lte=timezone.now()).order_by('created_date')
+    todos = Todo.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
     return render(request, 'main/todo_list.html', {'todos': todos})
 
 
@@ -39,7 +39,7 @@ def todo_edit(request, pk):
         form = TodoForm(request.POST, instance=todo)
         if form.is_valid():
             todo = form.save(commit=False)
-            todo.text = request.user
+            todo.user = request.user
             todo.created_date = timezone.now()
             todo.save()
             return redirect('todo_detail', pk=todo.pk)
