@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from main import views as main_views
+from django.conf.urls import url
 
 from main import views
 
@@ -25,4 +27,5 @@ urlpatterns = [
     path('todo/<int:pk>/', views.todo_detail, name='todo_detail'),
     path('todo/new/', views.todo_new, name='todo_new'),
     path('todo/<int:pk>/edit/', views.todo_edit, name='todo_edit'),
+    url(r'^signup/$', main_views.signup, name='signup'),
 ]
