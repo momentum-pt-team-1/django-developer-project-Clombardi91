@@ -7,6 +7,7 @@ from django.shortcuts import redirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from .forms import SignUpForm
+from django.http import HttpResponse
 
 
 # Create your views here.
@@ -62,4 +63,5 @@ def todo_edit(request, pk):
     else:
         form = TodoForm(instance=todo)
     return render(request, 'main/todo_edit.html', {'form': form})
+
      

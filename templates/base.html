@@ -15,6 +15,16 @@
                     {% include './icons/file-earmark-plus.svg' %}
                 </a>
                 <h1><a href="/">Book Me Up</a></h1>
+                <ul class="navigation">
+                    <li>{% block nav-home %}<a href="{% url 'todo_list' %}">Home</a>{% endblock %}</li>
+                    <li>{% block nav-tasks %}<a href="{% url 'todo_list' %}">Tasks</a>{% endblock %}</li>
+                    <li>{% block nav-create %}<a href="{% url 'todo_new' %}">Create</a>{% endblock %}</li>
+                    <li><a href="#">Edit Todo</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Share</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li>{% block nav-sign_up %}<a href="{% url 'signup' %}">Sign Up</a>{% endblock %}</li>
+                  </ul>
             </div>
           </header>
           <main class="container">
