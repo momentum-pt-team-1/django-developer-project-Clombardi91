@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <article class="todo">
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'todo_edit' pk=todo.pk %}">
+              {% include '../icons/pencil-fill.svg' %}
+            </a>
+        </aside>
+        {% if todo.created_date %}
+            <time class="date">
+                {{ todo.created_date }}
+            </time>
+        {% endif %}
+        <h2>{{ todo.title }}</h2>
+        <p>{{ todo.text|linebreaksbr }}</p>
+    </article>
+{% endblock %}

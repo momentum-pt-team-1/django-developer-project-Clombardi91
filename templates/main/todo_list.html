@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for todo in todos %}
+        <article class="post">
+            <time class="date">
+                {{ todo.created_date }}
+            </time>
+            <label>
+                <input type="checkbox">
+                <span class="checkable">Check when complete</span>
+              </label>
+            <h2><a href="{% url 'todo_detail' pk=todo.pk %}">{{ todo.text }}</a></h2>
+            <p>{{ todo.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+{% endblock %}
